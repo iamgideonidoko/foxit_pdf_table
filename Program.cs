@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-
-using foxit;
+﻿using foxit;
 using foxit.common;
 using foxit.common.fxcrt;
 using foxit.addon;
@@ -13,7 +7,8 @@ using foxit.pdf.annots;
 
 using DotNetEnv;
 
-namespace TablePDF {
+namespace TablePDF
+{
     internal class Program {
         public static string output_path = "./output/pdf/";
         public static string DateTimeToString(foxit.common.DateTime datetime)
@@ -27,7 +22,7 @@ namespace TablePDF {
 
         public static foxit.common.DateTime GetLocalDateTime()
         {
-            System.DateTimeOffset rime = System.DateTimeOffset.Now;
+            DateTimeOffset rime = DateTimeOffset.Now;
             foxit.common.DateTime datetime = new foxit.common.DateTime();
             datetime.year = (UInt16)rime.Year;
             datetime.month = (UInt16)rime.Month;
@@ -127,7 +122,7 @@ namespace TablePDF {
             switch (index)
             {
                 case 0:
-                    cell_text = "Reference style";
+                    cell_text = "Reference style Ifex";
                     break;
                 case 1:
                     cell_text = "Alignment center";
@@ -289,10 +284,10 @@ namespace TablePDF {
             }
         }
         static void Main(string[] args) {
-            DotNetEnv.Env.Load();
+            Env.Load();
             Console.WriteLine("TablePDF Main");
 
-            System.IO.Directory.CreateDirectory(output_path);
+            Directory.CreateDirectory(output_path);
 
             string sn = Environment.GetEnvironmentVariable("FOXIT_SDK_SN") ?? "";
             string key = Environment.GetEnvironmentVariable("FOXIT_SDK_KEY") ?? "";
@@ -322,7 +317,7 @@ namespace TablePDF {
                     }
                 }
             }
-            catch (foxit.PDFException e)
+            catch (PDFException e)
             {
                 Console.WriteLine(e.Message);
             }
