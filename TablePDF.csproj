@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,12 +9,12 @@
 
   <ItemGroup>
     <Reference Include="fsdk_dotnet">
-      <HintPath>lib\x64_vc15\fsdk_dotnet.dll</HintPath>
+      <HintPath>lib\fsdk_dotnet.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="fsdk.dll">
+    <None Update="lib\fsdk.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
