@@ -1,4 +1,6 @@
-﻿using foxit;
+﻿using System.Text;
+
+using foxit;
 using foxit.common;
 using foxit.common.fxcrt;
 using foxit.addon;
@@ -6,12 +8,14 @@ using foxit.pdf;
 using foxit.pdf.annots;
 
 using DotNetEnv;
+using ExcelDataReader;
 
 namespace TablePDF
 {
     internal class Program 
     {
-        public static string output_path = "./output/pdf/";
+        public static readonly string output_path = "./output/pdf/";
+        public static readonly string data_path = "./data/";
 
         private static readonly bool is_unix_platform = Environment.OSVersion.Platform == PlatformID.Unix;
 
@@ -267,6 +271,24 @@ namespace TablePDF
             }
         }
         static void Main(string[] args) {
+            try
+            {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                string input_file = data_path + "serious-injury-outcome-indicators-2000-2020.xlsx";
+                Console.WriteLine($"filepath => {input_file}");
+
+                using var stream = File.Open(input_file, FileMode.Open, FileAccess.Read);
+
+                using var reader = ExcelReaderFactory.CreateReader(stream);
+
+                Console.WriteLine($"Column count => {reader.FieldCount}, Row count => {reader.RowCount}");
+                // Console.WriteLine($"Data => {reader.GetValue(0)}");
+
+            } catch (Exception ex) when (ex is NotSupportedException)
+            {
+                Console.WriteLine($"Error => {ex.GetType} : {ex.Message}");
+            }
+
             Env.Load();
             Console.WriteLine("Foxit TABLE PDF");
 

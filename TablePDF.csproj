@@ -8,20 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="fsdk_dotnet">
-      <HintPath>lib\fsdk_dotnet.dll</HintPath>
+    <Reference Include="fsdk_dotnetcore">
+      <HintPath>lib\fsdk_dotnetcore.dll</HintPath>
     </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="lib\fsdk.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="2.3.0" />
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
+
