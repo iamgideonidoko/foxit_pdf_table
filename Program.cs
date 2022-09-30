@@ -9,7 +9,8 @@ using DotNetEnv;
 
 namespace TablePDF
 {
-    internal class Program {
+    internal class Program 
+    {
         public static string output_path = "./output/pdf/";
         public static string DateTimeToString(foxit.common.DateTime datetime)
         {
@@ -183,6 +184,7 @@ namespace TablePDF
                 {
                     for (int row = 0; row < 4; row++)
                     {
+                        // nested using statements
                         using (RichTextStyle style = new RichTextStyle())
                         using (TableCellDataColArray col_array = new TableCellDataColArray())
                         {
@@ -292,7 +294,7 @@ namespace TablePDF
             string sn = Environment.GetEnvironmentVariable("FOXIT_SDK_SN") ?? "";
             string key = Environment.GetEnvironmentVariable("FOXIT_SDK_KEY") ?? "";
 
-            Console.WriteLine($"sn => {sn} \n key => {key}");
+            Console.WriteLine($"sn => {sn}");
 
             // Initialize library
             ErrorCode error_code = Library.Initialize(sn, key);

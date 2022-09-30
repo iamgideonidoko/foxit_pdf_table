@@ -1,0 +1,145 @@
+Series_reference,Period,Type,Data_value,Lower_CI,Upper_CI,Units,Indicator,Cause,Validation,Population,Age,Severity
+W_A11,2000-02,Moving average,59.66666667,50.92582302,68.40751031,Injuries,Number,Assault,Validated,Whole pop,All ages,Fatal
+W_A12,2001-03,Moving average,60,51.23477459,68.76522541,"Per 100,000 people",Age-standardised rate,Falls,Provisional,Maori,0-74 years,Serious non-fatal
+W_F11B,2002-04,Moving average,59,50.30812505,67.69187495,"Per 100,000 FTEs",Rate per billion km,Work,Validated,Children,75+ years,Serious
+W_F12B,2003-05,Moving average,59,50.30812505,67.69187495,Per billion km,Rate per thousand registered vehicles,Intentional self-harm,Validated,Children,0-14 years,Fatal
+W_W12,2004-06,Moving average,61.33333333,52.47125167,70.195415,Per thousand registered vehicles,Rate per billion km,Motor vehicle traffic crashes,Validated,Children,75+ years,Fatal
+W_W14,2005-07,Single year,63,54.01831668,71.98168332,"Per 100,000 FTEs",Age-standardised rate,Intentional,Provisional,Whole pop,All ages,Serious
+M_S11,2006-08,Single year,57.33333333,48.76510444,65.90156223,Per thousand registered vehicles,Rate per billion km,Pedestrian,Provisional,Whole pop,0-74 years,Serious non-fatal
+M_S12,2007-09,Moving average,63.66666667,54.63758627,72.69574706,"Per 100,000 people",Age-standardised rate,Car occupant,Provisional,Children,75+ years,Serious
+M_F01C,2008-10,Moving average,64,54.94731413,73.05268587,Injuries,Rate per billion km,All,Provisional,Children,All ages,Serious non-fatal
+M_F02C,2009-11,Single year,64.33333333,55.25710337,73.40956329,"Per 100,000 people",Rate per thousand registered vehicles,Drowing,Validated,Maori,All ages,Serious
+M_F21C,2010-12,Single year,55.33333333,46.91587684,63.75078983,Per thousand registered vehicles,Number,Motor vehicle traffic crashes,Provisional,Whole pop,75+ years,Serious
+M_F22C,2011-13,Moving average,54.33333333,45.99228499,62.67438168,Per thousand registered vehicles,Rate per billion km,Assault,Provisional,Maori,0-14 years,Serious non-fatal
+M_W01,2012-14,Moving average,51.33333333,43.22582886,59.4408378,"Per 100,000 people",Age-standardised rate,Car occupant,Provisional,Maori,0-74 years,Serious non-fatal
+M_W02,2013-15,Single year,52,43.84001923,60.15998077,"Per 100,000 people",Number,Motor vehicle traffic crashes,Validated,Whole pop,0-14 years,Serious non-fatal
+C_M11,2014-16,Single year,54,45.68457705,62.31542295,"Per 100,000 FTEs",Age-standardised rate,Work,Validated,Maori,75+ years,Serious non-fatal
+C_M12,2015-17,Moving average,52.33333333,44.14724055,60.51942611,"Per 100,000 people",Number,Pedestrian,Provisional,Maori,0-74 years,Fatal
+C_IN01,2016-18,Single year,53.33333333,45.06939957,61.5972671,Injuries,Rate per thousand registered vehicles,Intentional,Provisional,Whole pop,0-14 years,Serious non-fatal
+C_IN02,2000-02,Moving average,1.543343121,1.317063238,1.769623003,"Per 100,000 people",Age-standardised rate,Work,Validated,Children,0-14 years,Fatal
+C_A21,2001-03,Single year,1.525510302,1.302605894,1.74841471,Injuries,Number,All,Provisional,Maori,75+ years,Serious
+C_A22,2002-04,Moving average,1.464855873,1.249053431,1.680658315,Per thousand registered vehicles,Age-standardised rate,Assault,Provisional,Children,All ages,Fatal
+C_IN21,2003-05,Moving average,1.444340378,1.231538856,1.6571419,"Per 100,000 FTEs",Rate per billion km,Drowing,Provisional,Maori,0-74 years,Serious
+C_IN22,2004-06,Moving average,1.488136846,1.273032627,1.703241065,"Per 100,000 FTEs",Age-standardised rate,Assault,Provisional,Maori,75+ years,Serious
+C_P21,2005-07,Moving average,1.508692612,1.293405498,1.723979726,"Per 100,000 people",Number,Pedestrian,Provisional,Maori,0-14 years,Serious
+C_P22,2006-08,Single year,1.356024624,1.153071925,1.558977323,Per thousand registered vehicles,Number,Pedestrian,Provisional,Whole pop,0-14 years,Serious
+C_C21,2007-09,Moving average,1.504094502,1.290341751,1.717847253,"Per 100,000 people",Rate per billion km,Falls,Validated,Children,75+ years,Serious non-fatal
+C_C22,2008-10,Single year,1.50307983,1.289762645,1.716397015,"Per 100,000 FTEs",Age-standardised rate,Work,Provisional,Maori,0-74 years,Fatal
+W_I11,2009-11,Moving average,1.491112176,1.279822042,1.70240231,Injuries,Number,Falls,Validated,Whole pop,0-74 years,Fatal
+W_I12,2010-12,Moving average,1.259846064,1.067084058,1.452608071,Injuries,Age-standardised rate,Pedestrian,Validated,Maori,0-74 years,Serious
+W_D11,2011-13,Single year,1.238243708,1.046779681,1.429707735,"Per 100,000 FTEs",Rate per thousand registered vehicles,Motor vehicle traffic crashes,Provisional,Whole pop,0-74 years,Serious
+W_D12,2012-14,Single year,1.166044323,0.980176433,1.351912214,Injuries,Number,Work,Provisional,Maori,75+ years,Serious non-fatal
+W_M11,2013-15,Single year,1.151603636,0.969183415,1.334023856,Injuries,Age-standardised rate,Work,Validated,Children,All ages,Serious
+W_M12,2014-16,Single year,1.170206329,0.988083456,1.352329202,Per thousand registered vehicles,Rate per thousand registered vehicles,Intentional self-harm,Provisional,Children,0-74 years,Fatal
+W_S11,2015-17,Single year,1.108419526,0.932880727,1.283958325,"Per 100,000 people",Age-standardised rate,Motor vehicle traffic crashes,Validated,Maori,0-74 years,Serious
+W_S12,2016-18,Moving average,1.102876481,0.929627671,1.276125291,"Per 100,000 people",Rate per billion km,Drowing,Validated,Maori,0-74 years,Serious
+W_D13,2000-02,Single year,64.33333333,55.25710337,73.40956329,"Per 100,000 people",Rate per thousand registered vehicles,Intentional self-harm,Validated,Maori,0-74 years,Serious
+W_D14,2001-03,Moving average,68.66666667,59.28974158,78.04359176,Injuries,Age-standardised rate,Work,Provisional,Maori,All ages,Serious
+W_S13,2002-04,Single year,79,68.942246,89.057754,Injuries,Rate per billion km,Motor vehicle traffic crashes,Provisional,Whole pop,75+ years,Serious non-fatal
+W_S14,2003-05,Moving average,83.33333333,73.00341613,93.66325054,Per billion km,Age-standardised rate,Motor vehicle traffic crashes,Provisional,Whole pop,75+ years,Serious
+W_F11A,2004-06,Single year,86,75.50610561,96.49389439,"Per 100,000 people",Rate per thousand registered vehicles,Pedestrian,Validated,Whole pop,All ages,Serious
+W_F12A,2005-07,Moving average,80.33333333,70.1910589,90.47560776,Per thousand registered vehicles,Number,Intentional self-harm,Provisional,Whole pop,0-14 years,Fatal
+W_F11C,2006-08,Single year,86,75.50610561,96.49389439,Injuries,Rate per thousand registered vehicles,Pedestrian,Validated,Whole pop,All ages,Fatal
+W_F12C,2007-09,Moving average,91,80.20536009,101.7946399,"Per 100,000 FTEs",Age-standardised rate,Drowing,Validated,Children,0-74 years,Serious non-fatal
+W_M13,2008-10,Moving average,98,86.79787276,109.2021272,Per thousand registered vehicles,Rate per thousand registered vehicles,Assault,Provisional,Children,0-74 years,Serious non-fatal
+W_M14,2009-11,Single year,96,84.91276941,107.0872306,"Per 100,000 FTEs",Rate per billion km,Pedestrian,Validated,Whole pop,0-14 years,Fatal
+W_M15,2010-12,Moving average,94,83.02886926,104.9711307,"Per 100,000 people",Age-standardised rate,All,Provisional,Maori,0-74 years,Fatal
+W_M16,2011-13,Single year,86.33333333,75.8191216,96.84754506,"Per 100,000 people",Rate per billion km,All,Validated,Whole pop,0-14 years,Fatal
+W_M17,2012-14,Single year,88.33333333,77.69803264,98.96863403,Per billion km,Rate per thousand registered vehicles,Car occupant,Provisional,Maori,0-14 years,Fatal
+W_M18,2013-15,Single year,86.33333333,75.8191216,96.84754506,"Per 100,000 FTEs",Number,All,Validated,Children,0-74 years,Serious
+W_I01,2014-16,Single year,91,80.20536009,101.7946399,Per thousand registered vehicles,Age-standardised rate,Intentional,Provisional,Children,0-14 years,Serious non-fatal
+W_I02,2015-17,Moving average,86.66666667,76.13217679,97.20115655,"Per 100,000 people",Rate per billion km,Car occupant,Provisional,Whole pop,0-14 years,Fatal
+W_A01,2016-18,Single year,90,79.26483514,100.7351649,"Per 100,000 FTEs",Age-standardised rate,Pedestrian,Validated,Whole pop,75+ years,Serious non-fatal
+W_A02,2000-02,Single year,1.746581507,1.499968186,1.993194828,Injuries,Age-standardised rate,Motor vehicle traffic crashes,Provisional,Maori,All ages,Serious non-fatal
+W_S01,2001-03,Single year,1.838470694,1.587357389,2.089583999,Injuries,Rate per thousand registered vehicles,All,Validated,Maori,0-14 years,Serious non-fatal
+W_S02,2002-04,Moving average,2.074291131,1.810206195,2.338376066,Injuries,Rate per billion km,Car occupant,Validated,Whole pop,All ages,Serious
+W_F01A,2003-05,Moving average,2.152382334,1.885538033,2.419226634,"Per 100,000 FTEs",Age-standardised rate,Intentional self-harm,Provisional,Maori,All ages,Serious non-fatal
+W_F02A,2004-06,Moving average,2.188612763,1.921391115,2.455834412,Per thousand registered vehicles,Rate per thousand registered vehicles,Car occupant,Validated,Children,75+ years,Fatal
+W_M01,2005-07,Single year,2.006630018,1.752934246,2.26032579,"Per 100,000 FTEs",Age-standardised rate,Work,Validated,Whole pop,0-14 years,Serious non-fatal
+W_M02,2006-08,Moving average,2.102569215,1.845497075,2.359641354,Per thousand registered vehicles,Age-standardised rate,Motor vehicle traffic crashes,Validated,Children,0-14 years,Serious non-fatal
+W_F01B,2007-09,Moving average,2.180136506,1.92081566,2.439457352,Per thousand registered vehicles,Age-standardised rate,Intentional self-harm,Provisional,Whole pop,All ages,Serious
+W_F02B,2008-10,Moving average,2.294072565,2.030903491,2.55724164,"Per 100,000 people",Number,Drowing,Validated,Maori,All ages,Serious non-fatal
+W_F01C,2009-11,Moving average,2.177680721,1.924883079,2.430478363,"Per 100,000 people",Age-standardised rate,Intentional self-harm,Provisional,Whole pop,0-74 years,Serious
+W_F02C,2010-12,Moving average,2.076675639,1.832837779,2.320513499,"Per 100,000 people",Rate per billion km,Car occupant,Validated,Children,75+ years,Fatal
+W_I21,2011-13,Single year,1.844976321,1.618429971,2.07152267,"Per 100,000 FTEs",Rate per thousand registered vehicles,Assault,Validated,Children,75+ years,Fatal
+W_I22,2012-14,Single year,1.845878833,1.6214164,2.070341265,Per billion km,Number,Assault,Validated,Whole pop,0-74 years,Fatal
+W_A21,2013-15,Single year,1.75182479,1.536079369,1.967570211,"Per 100,000 people",Number,All,Provisional,Children,75+ years,Serious non-fatal
+W_A22,2014-16,Moving average,1.812515211,1.595017326,2.030013096,"Per 100,000 FTEs",Number,Drowing,Validated,Whole pop,0-14 years,Serious
+W_S21,2015-17,Single year,1.661474194,1.457147084,1.865801303,"Per 100,000 people",Rate per billion km,Work,Provisional,Whole pop,0-14 years,Serious
+W_S22,2016-18,Moving average,1.685367307,1.481502624,1.88923199,"Per 100,000 people",Number,Intentional,Provisional,Children,0-14 years,Serious
+W_F21A,2002-04,Single year,89,78.32464154,99.67535846,Per billion km,Number,Motor vehicle traffic crashes,Provisional,Whole pop,0-14 years,Serious
+W_F22A,2003-05,Moving average,82,71.75305536,92.24694464,Per billion km,Rate per billion km,Work,Provisional,Whole pop,0-74 years,Fatal
+W_M21,2004-06,Single year,76.33333333,66.44678765,86.21987902,Per thousand registered vehicles,Age-standardised rate,Assault,Validated,Children,All ages,Serious non-fatal
+W_M22,2005-07,Single year,69,59.60034294,78.39965706,Injuries,Rate per thousand registered vehicles,All,Validated,Maori,All ages,Serious non-fatal
+W_F21B,2006-08,Moving average,66.66666667,57.42730784,75.9060255,Per billion km,Age-standardised rate,Car occupant,Validated,Maori,All ages,Serious
+W_F22B,2007-09,Single year,65.33333333,56.18683474,74.47983193,"Per 100,000 FTEs",Rate per thousand registered vehicles,Motor vehicle traffic crashes,Validated,Children,All ages,Fatal
+W_F21C,2008-10,Single year,76.33333333,66.44678765,86.21987902,"Per 100,000 people",Rate per thousand registered vehicles,Pedestrian,Provisional,Maori,All ages,Fatal
+W_F22C,2009-11,Single year,93.33333333,82.40117654,104.2654901,"Per 100,000 people",Number,Intentional,Provisional,Children,75+ years,Serious
+W_W01,2010-12,Moving average,87,76.44527093,97.55472907,"Per 100,000 FTEs",Rate per thousand registered vehicles,Pedestrian,Provisional,Children,75+ years,Serious non-fatal
+W_W02,2011-13,Single year,74.66666667,64.88864837,84.44468496,Per thousand registered vehicles,Rate per billion km,Drowing,Validated,Maori,All ages,Fatal
+W_W21,2012-14,Single year,52,43.84001923,60.15998077,"Per 100,000 FTEs",Age-standardised rate,Car occupant,Validated,Whole pop,All ages,Serious
+W_W22,2013-15,Single year,50.33333333,42.30518645,58.36148022,Injuries,Number,Assault,Validated,Children,0-74 years,Fatal
+M_I11,2014-16,Moving average,51,42.91886147,59.08113853,Injuries,Age-standardised rate,Motor vehicle traffic crashes,Validated,Whole pop,0-74 years,Fatal
+M_I12,2015-17,Moving average,55.66666667,47.22389446,64.10943887,Per thousand registered vehicles,Number,All,Validated,Whole pop,0-74 years,Fatal
+M_M11,2016-18,Single year,56.33333333,47.84015607,64.8265106,Per billion km,Rate per billion km,All,Provisional,Children,0-14 years,Serious non-fatal
+M_M12,2017-19,Moving average,62,53.08988502,70.91011498,"Per 100,000 people",Rate per billion km,Falls,Validated,Whole pop,0-14 years,Fatal
+M_I01,2018-20,Single year,59.66666667,50.92582302,68.40751031,Per billion km,Age-standardised rate,Drowing,Validated,Maori,0-74 years,Serious non-fatal
+M_I02,2002-04,Single year,5.156729822,4.538191178,5.775268467,"Per 100,000 FTEs",Rate per thousand registered vehicles,Intentional self-harm,Validated,Children,All ages,Serious
+M_A01,2003-05,Single year,4.495352627,3.933078482,5.057626773,Per thousand registered vehicles,Rate per thousand registered vehicles,Falls,Provisional,Children,All ages,Fatal
+M_A02,2004-06,Single year,4.033838922,3.510343512,4.557334332,Per thousand registered vehicles,Rate per billion km,Motor vehicle traffic crashes,Validated,Whole pop,75+ years,Serious non-fatal
+M_F01A,2005-07,Moving average,3.555335282,3.069112803,4.041557761,"Per 100,000 people",Age-standardised rate,Intentional self-harm,Provisional,Children,All ages,Serious non-fatal
+M_F02A,2006-08,Single year,3.326693273,2.861383754,3.792002791,Injuries,Age-standardised rate,Pedestrian,Validated,Maori,75+ years,Serious
+M_M01,2007-09,Moving average,3.234615346,2.776120028,3.693110664,Per thousand registered vehicles,Number,Pedestrian,Validated,Children,0-14 years,Fatal
+M_M02,2008-10,Moving average,3.840742215,3.334470362,4.347014069,"Per 100,000 people",Rate per billion km,Assault,Validated,Maori,All ages,Fatal
+M_I21,2009-11,Single year,4.630920218,4.074906219,5.186934216,"Per 100,000 FTEs",Number,Intentional self-harm,Provisional,Maori,0-74 years,Serious
+M_I22,2010-12,Moving average,4.243696376,3.712024179,4.775368572,"Per 100,000 people",Age-standardised rate,Intentional,Provisional,Whole pop,0-74 years,Fatal
+M_A21,2011-13,Single year,3.63504949,3.139679412,4.130419568,Per billion km,Rate per thousand registered vehicles,Falls,Validated,Children,0-74 years,Fatal
+M_A22,2012-14,Moving average,2.431349549,2.031773075,2.830926023,Per thousand registered vehicles,Number,Intentional,Provisional,Maori,All ages,Serious
+M_S21,2013-15,Moving average,2.188057841,1.81867975,2.557435932,Per thousand registered vehicles,Age-standardised rate,Pedestrian,Validated,Maori,0-14 years,Serious non-fatal
+M_S22,2014-16,Moving average,2.046631872,1.69997939,2.393284354,"Per 100,000 FTEs",Age-standardised rate,Drowing,Provisional,Maori,0-74 years,Serious
+M_F21A,2015-17,Single year,2.128008605,1.77886016,2.477157049,"Per 100,000 FTEs",Rate per thousand registered vehicles,Assault,Provisional,Whole pop,75+ years,Serious
+M_F22A,2016-18,Moving average,2.102309344,1.759931666,2.444687022,Injuries,Number,Falls,Validated,Whole pop,0-14 years,Fatal
+M_M21,2017-19,Moving average,2.300644474,1.944741172,2.656547776,Per billion km,Rate per billion km,Assault,Provisional,Children,All ages,Fatal
+M_M22,2018-20,Single year,2.169963517,1.827315698,2.512611336,Per thousand registered vehicles,Number,Falls,Provisional,Children,0-74 years,Fatal
+M_F21B,2000-02,Moving average,79.66666667,69.56656404,89.7667693,Per thousand registered vehicles,Number,Pedestrian,Validated,Whole pop,All ages,Fatal
+M_F22B,2001-03,Moving average,82,71.75305536,92.24694464,Per thousand registered vehicles,Number,Drowing,Validated,Maori,0-74 years,Serious non-fatal
+M_F01B,2002-04,Moving average,92.33333333,81.45989938,103.2067673,Per billion km,Age-standardised rate,Intentional self-harm,Validated,Whole pop,All ages,Serious non-fatal
+M_F02B,2003-05,Moving average,100.6666667,89.31315246,112.0201809,Per thousand registered vehicles,Age-standardised rate,All,Validated,Whole pop,0-74 years,Serious
+C_I11,2004-06,Single year,107.6666667,95.9250446,119.4082887,Per billion km,Rate per thousand registered vehicles,Intentional self-harm,Provisional,Children,All ages,Serious non-fatal
+C_I12,2005-07,Moving average,103.6666667,92.14521955,115.1881138,"Per 100,000 FTEs",Number,All,Validated,Maori,All ages,Fatal
+C_I01,2006-08,Single year,97.66666667,86.48360689,108.8497264,"Per 100,000 FTEs",Rate per thousand registered vehicles,Pedestrian,Validated,Maori,All ages,Fatal
+C_I02,2007-09,Moving average,89.33333333,78.63800224,100.0286644,"Per 100,000 people",Number,Drowing,Validated,Children,0-74 years,Serious non-fatal
+C_M01,2008-10,Moving average,90.66666667,79.89181529,101.441518,Per thousand registered vehicles,Rate per thousand registered vehicles,Car occupant,Validated,Maori,All ages,Serious
+C_M02,2009-11,Single year,99.33333333,88.05525859,110.6114081,Per billion km,Rate per billion km,Intentional self-harm,Validated,Children,75+ years,Fatal
+C_I21,2010-12,Single year,111.3333333,99.39345037,123.2732163,Injuries,Rate per thousand registered vehicles,Intentional,Validated,Maori,0-74 years,Serious non-fatal
+C_I22,2011-13,Moving average,112,100.0244222,123.9755778,Injuries,Rate per thousand registered vehicles,Drowing,Provisional,Whole pop,0-74 years,Fatal
+C_F21,2012-14,Moving average,105.3333333,93.71963937,116.9470273,Injuries,Age-standardised rate,Drowing,Validated,Children,0-74 years,Fatal
+C_F22,2013-15,Moving average,105,93.4046967,116.5953033,Per thousand registered vehicles,Rate per thousand registered vehicles,Work,Provisional,Maori,75+ years,Fatal
+C_M21,2014-16,Single year,115.3333333,103.1808542,127.4858125,Per thousand registered vehicles,Rate per billion km,Intentional,Validated,Children,0-14 years,Serious
+C_M22,2015-17,Single year,131.6666667,118.6821621,144.6511713,Per billion km,Rate per billion km,Work,Validated,Children,0-74 years,Serious non-fatal
+a12,2016-18,Single year,139,125.658801,152.341199,"Per 100,000 people",Rate per billion km,Motor vehicle traffic crashes,Validated,Children,75+ years,Serious non-fatal
+a11,2000-02,Moving average,13.52233735,11.80464242,15.24003228,Per billion km,Rate per billion km,Assault,Provisional,Whole pop,75+ years,Serious non-fatal
+f12b,2001-03,Single year,13.76102258,12.04072805,15.4813171,Per thousand registered vehicles,Number,Motor vehicle traffic crashes,Provisional,Children,75+ years,Serious non-fatal
+f11b,2002-04,Single year,15.31232725,13.50910437,17.11555013,Per thousand registered vehicles,Age-standardised rate,Falls,Provisional,Whole pop,All ages,Serious
+w14,2003-05,Moving average,16.49166458,14.63133432,18.35199484,"Per 100,000 people",Number,Intentional,Validated,Maori,75+ years,Serious non-fatal
+w12,2004-06,Single year,17.40395702,15.50471207,19.30320198,Per thousand registered vehicles,Age-standardised rate,Intentional,Provisional,Whole pop,All ages,Serious
+s12,2005-07,Single year,16.55642203,14.71379047,18.39905359,"Per 100,000 people",Age-standardised rate,Motor vehicle traffic crashes,Validated,Children,0-14 years,Serious
+s11,2006-08,Moving average,15.18980386,13.44622385,16.93338387,"Per 100,000 people",Number,Motor vehicle traffic crashes,Provisional,Whole pop,75+ years,Serious non-fatal
+m12,2007-09,Single year,13.48488822,11.8644265,15.10534994,Per thousand registered vehicles,Age-standardised rate,Intentional self-harm,Validated,Children,0-14 years,Fatal
+m11,2008-10,Moving average,13.2772599,11.69203151,14.86248829,Per thousand registered vehicles,Rate per thousand registered vehicles,Car occupant,Provisional,Children,0-14 years,Serious
+f02c,2009-11,Moving average,14.2089008,12.58620213,15.83159946,Per thousand registered vehicles,Number,Motor vehicle traffic crashes,Validated,Children,All ages,Serious
+f01c,2010-12,Single year,15.69765149,14.00246045,17.39284252,"Per 100,000 people",Rate per thousand registered vehicles,Assault,Validated,Whole pop,0-14 years,Serious
+wf02,2011-13,Moving average,15.62333324,13.93889088,17.30777559,Injuries,Age-standardised rate,Falls,Provisional,Whole pop,0-14 years,Serious non-fatal
+wf01,2012-14,Single year,14.51756515,12.90139372,16.13373658,"Per 100,000 FTEs",Rate per billion km,All,Provisional,Children,0-14 years,Fatal
+in02,2013-15,Single year,14.25387211,12.66066302,15.8470812,Per billion km,Age-standardised rate,Pedestrian,Provisional,Whole pop,0-74 years,Fatal
+in01,2014-16,Moving average,15.20865579,13.58310722,16.83420436,Per billion km,Age-standardised rate,Intentional self-harm,Validated,Maori,All ages,Fatal
+f22c,2015-17,Moving average,16.78383909,15.10238135,18.46529682,Injuries,Rate per billion km,Falls,Provisional,Children,0-14 years,Serious non-fatal
+f21c,2016-18,Moving average,17.35239597,15.65921314,19.04557881,Per thousand registered vehicles,Age-standardised rate,Drowing,Validated,Maori,0-74 years,Serious
+a22,2000-02,Moving average,28.66666667,22.60801391,34.72531942,Injuries,Rate per billion km,Assault,Provisional,Children,0-74 years,Serious non-fatal
+a21,2001-03,Single year,28,22.01221112,33.98778888,"Per 100,000 people",Number,Intentional,Provisional,Maori,75+ years,Fatal
+c22,2002-04,Moving average,32.33333333,25.89886447,38.76780219,Injuries,Rate per billion km,Falls,Validated,Whole pop,0-74 years,Serious
+c21,2003-05,Single year,38,31.02443706,44.97556294,"Per 100,000 FTEs",Age-standardised rate,Work,Validated,Maori,0-74 years,Serious
+in22,2004-06,Moving average,48,40.16014406,55.83985594,"Per 100,000 people",Age-standardised rate,Motor vehicle traffic crashes,Validated,Maori,0-14 years,Fatal
+in21,2005-07,Moving average,50,41.99848054,58.00151946,Per billion km,Rate per billion km,Motor vehicle traffic crashes,Validated,Children,0-74 years,Fatal
+p22,2006-08,Moving average,51.33333333,43.22582886,59.4408378,Per thousand registered vehicles,Age-standardised rate,Work,Provisional,Children,0-14 years,Fatal
+p21,2007-09,Single year,50,41.99848054,58.00151946,Injuries,Rate per billion km,Pedestrian,Validated,Whole pop,0-74 years,Serious non-fatal
