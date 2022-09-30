@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="DotNetEnv" Version="2.3.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
   </ItemGroup>
 
 </Project>
