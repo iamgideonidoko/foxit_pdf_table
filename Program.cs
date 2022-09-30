@@ -57,7 +57,7 @@ namespace TablePDF
                             using (style.font = new Font("FreeSerif", 0, Font.Charset.e_CharsetANSI, 0)) { }
                         else
                             using (style.font = new Font("Times New Roman", 0, Font.Charset.e_CharsetANSI, 0))
-                                style.is_bold = true;
+                            style.is_bold = true;
                         style.text_alignment = Alignment.e_AlignmentRight;
                         break;
                     }
@@ -100,7 +100,7 @@ namespace TablePDF
             switch (index)
             {
                 case 0:
-                    cell_text = "Reference style test";
+                    cell_text = "Reference style God";
                     break;
                 case 1:
                     cell_text = "Alignment center";
@@ -157,130 +157,113 @@ namespace TablePDF
             // Add a spreadsheet with 4 rows and 3 columns
             {
                 int index = 0;
-                using (TableCellDataArray cell_array = new())
+                using TableCellDataArray cell_array = new();
+                for (int row = 0; row < 4; row++)
                 {
-                    for (int row = 0; row < 4; row++)
+                    // nested using statements
+                    using RichTextStyle style = new();
+                    using TableCellDataColArray col_array = new();
+                    for (int col = 0; col < 3; col++)
                     {
-                        // nested using statements
-                        using (RichTextStyle style = new())
-                        using (TableCellDataColArray col_array = new())
-                        {
-                            for (int col = 0; col < 3; col++)
-                            {
-                                string cell_text = GetTableCellText(index);
-                                SetTableTextStyle(index++, style);
-                                Image image = new();
-                                using (TableCellData cell_data = new(style, cell_text, image, new RectF()))
-                                {
-                                    col_array.Add(cell_data);
-                                }
-                            }
-                            cell_array.Add(col_array);
-                        }
+                        string cell_text = GetTableCellText(index);
+                        SetTableTextStyle(index++, style);
+                        Image image = new();
+                        using TableCellData cell_data = new(style, cell_text, image, new RectF());
+                        col_array.Add(cell_data);
                     }
-                    float page_width = page.GetWidth();
-                    float page_height = page.GetHeight();
-                    TableBorderInfo outside_border_left = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_right = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_top = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_bottom = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo inside_border_row_info = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo inside_border_col_info = new()
-                    {
-                        line_width = 1,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    using (RectF rect = new RectF(100, 550, page_width - 100, page_height - 100))
-                    using (TableData data = new TableData(rect, 4, 3, outside_border_left, outside_border_right, outside_border_top, outside_border_bottom, inside_border_row_info, inside_border_col_info, new TableCellIndexArray(), new FloatArray(), new FloatArray()))
-                    {
-                        TableGenerator.AddTableToPage(page, data, cell_array);
-                    }
+                    cell_array.Add(col_array);
                 }
+                float page_width = page.GetWidth();
+                float page_height = page.GetHeight();
+                TableBorderInfo outside_border_left = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_right = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_top = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_bottom = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo inside_border_row_info = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo inside_border_col_info = new()
+                {
+                    line_width = 1,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                using RectF rect = new(100, 550, page_width - 100, page_height - 100);
+                using TableData data = new(rect, 4, 3, outside_border_left, outside_border_right, outside_border_top, outside_border_bottom, inside_border_row_info, inside_border_col_info, new TableCellIndexArray(), new FloatArray(), new FloatArray());
+                TableGenerator.AddTableToPage(page, data, cell_array);
             }
 
             //Add a spreadsheet with 5 rows and 6 columns
             {
-                string cell_text = " ";
                 string[] show_text = { "Foxit Software Incorporated", "Foxit Reader", "Foxit MobilePDF", "Foxit PhantomPDF", "Foxit PDF SDKs", "Col 6" };
-                using (TableCellDataArray cell_array = new())
+                using TableCellDataArray cell_array = new();
+                for (int row = 0; row < 5; row++)
                 {
-                    for (int row = 0; row < 5; row++)
+                    using RichTextStyle style = new();
+                    using TableCellDataColArray col_array = new();
+                    for (int col = 0; col < 6; col++)
                     {
-                        using (RichTextStyle style = new())
-                        using (TableCellDataColArray col_array = new())
-                        {
-                            for (int col = 0; col < 6; col++)
-                            {
-                                cell_text = show_text[col];
-                                SetTableTextStyle(row, style);
-                                using (TableCellData cell_data = new(style, cell_text, new Image(), new RectF()))
-                                {
-                                    col_array.Add(cell_data);
-                                }
-                            }
-                            cell_array.Add(col_array);
-                        }
+                        string cell_text = show_text[col];
+                        SetTableTextStyle(row, style);
+                        using TableCellData cell_data = new(style, cell_text, new Image(), new RectF());
+                        col_array.Add(cell_data);
                     }
-
-                    float page_width = page.GetWidth();
-                    float page_height = page.GetHeight();
-
-                    TableBorderInfo outside_border_left = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_right = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_top = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo outside_border_bottom = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo inside_border_row_info = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    TableBorderInfo inside_border_col_info = new()
-                    {
-                        line_width = 2,
-                        table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
-                    };
-                    using (RectF rect = new(10, 200, page_width - 10, page_height - 350))
-                    using (TableData data = new(rect, 5, 6, outside_border_left, outside_border_right, outside_border_top, outside_border_bottom, inside_border_row_info, inside_border_col_info, new TableCellIndexArray(), new FloatArray(), new FloatArray()))
-                    {
-                        TableGenerator.AddTableToPage(page, data, cell_array);
-                    }
+                    cell_array.Add(col_array);
                 }
+
+                float page_width = page.GetWidth();
+                float page_height = page.GetHeight();
+
+                TableBorderInfo outside_border_left = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_right = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_top = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo outside_border_bottom = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo inside_border_row_info = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                TableBorderInfo inside_border_col_info = new()
+                {
+                    line_width = 2,
+                    table_border_style = TableBorderInfo.TableBorderStyle.e_TableBorderStyleSolid
+                };
+                using RectF rect = new(10, 200, page_width - 10, page_height - 350);
+                using TableData data = new(rect, 5, 6, outside_border_left, outside_border_right, outside_border_top, outside_border_bottom, inside_border_row_info, inside_border_col_info, new TableCellIndexArray(), new FloatArray(), new FloatArray());
+                TableGenerator.AddTableToPage(page, data, cell_array);
             }
         }
         static void Main(string[] args) {
@@ -304,18 +287,14 @@ namespace TablePDF
 
             try
             {
-                using (PDFDoc doc = new())
-                {
-                    // Get first page with index 0
-                    using (PDFPage page = doc.InsertPage(0, PDFPage.Size.e_SizeLetter))
-                    {
-                        AddElectronicTable(page);
-                        // Save PDF file
-                        string output_file = output_path + "TablePDF.pdf";
-                        doc.SaveAs(output_file, (int)PDFDoc.SaveFlags.e_SaveFlagNoOriginal);
-                        Console.WriteLine("Done.");
-                    }
-                }
+                using PDFDoc doc = new();
+                // Get first page with index 0
+                using PDFPage page = doc.InsertPage(0, PDFPage.Size.e_SizeLetter);
+                AddElectronicTable(page);
+                // Save PDF file
+                string output_file = output_path + "TablePDF.pdf";
+                doc.SaveAs(output_file, (int)PDFDoc.SaveFlags.e_SaveFlagNoOriginal);
+                Console.WriteLine("Done.");
             }
             catch (PDFException e)
             {
