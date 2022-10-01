@@ -60,6 +60,7 @@ namespace TablePDF
                         DataRow? actual_row = table?.Rows[row];
                         DataColumn? actual_column = table?.Columns[col];
                         string cell_text = $"{actual_row?[col]}";
+                        // Update text style
                         SetTableTextStyle(row, style);
                         using TableCellData cell_data = new(style, cell_text, new Image(), new RectF());
                         col_array.Add(cell_data);
@@ -123,9 +124,9 @@ namespace TablePDF
 
                 dataSet = reader.AsDataSet();
 
-            } catch (Exception ex)
+            } catch (Exception e)
             {
-                Console.WriteLine($"Error: {ex.GetType()} : {ex.Message}");
+                Console.WriteLine($"{e.GetType()} : {e.Message}");
             }
 
             // Load variables from .env file to Environment
