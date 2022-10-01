@@ -18,12 +18,12 @@ namespace TablePDF
         public static readonly string output_path = "./output/pdf/";
         public static readonly string data_path = "./data/";
 
-        private static int row_count;
-        private static int col_count;
-        private static int num_of_pages;
-        private static readonly int row_per_page = 10;
-        private static readonly int col_per_page = 8;
-        private static DataSet? dataSet;
+        private static int row_count; // number of rows the dataset has
+        private static int col_count; // number of columns the dataset has
+        private static int num_of_pages; // number of PDF pages
+        private static readonly int row_per_page = 10; // number of rows per PDF page
+        private static readonly int col_per_page = 8; // number of columns per PDF page
+        private static DataSet? dataSet; // store for the read data
 
         public static void SetTableTextStyle(int index, RichTextStyle style)
         {
@@ -110,7 +110,9 @@ namespace TablePDF
             Console.WriteLine($"Generating Table PDF...");
             try
             {
-                // Add encoding required to parsed stringin excel docs
+                Directory.CreateDirectory(output_path);
+
+                // Add encoding required to parse string in excel docs
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                 string input_file = data_path + "serious-injury-outcome-indicators-2000-2020.xlsx";
 
@@ -131,8 +133,6 @@ namespace TablePDF
 
             // Load variables from .env file to Environment
             Env.Load();
-
-            Directory.CreateDirectory(output_path);
 
             string sn = Environment.GetEnvironmentVariable("FOXIT_SDK_SN") ?? "";
             string key = Environment.GetEnvironmentVariable("FOXIT_SDK_KEY") ?? "";
